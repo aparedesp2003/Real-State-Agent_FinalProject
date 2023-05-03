@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact Form</title>
+	<meta content="Andres Paredes - Form" name="description">
+	<link rel = "stylesheet" href= "project_Styles.css">
+	<link rel = "icon" href="Logo.ico">
+	<style type="text/css">
+
+		h1 {
+			font-family: Times New Roman, serif;
+			color: #000000;
+			display: flex;
+			justify-content: center;
+			flex-direction: row;
+		}
+		label {
+			font-weight:bold;
+		}
+
+		body {
+			font-family: Times New Roman, serif;
+			color: #000000;
+			font-size: large;
+			background-color: lightgray;
+			width: 920px;
+			margin-right: auto;
+			margin-left: auto;
+			border: 3px solid #070036;
+			border-radius: 20px;
+			box-shadow: 3px 3px 3px 3px #070036;
+			padding: 8px;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="allPage">
+		<header>
+		<div class = "navBar">
+		<ul>
+			<li><a href  = "file:///C:/Users/Yefri%20Paredes/Desktop/Andres%20Paredes/Centennial%20College/PROGRAM/1st%20Semester/WID/Individual%20Project/homepage.html">HOME PAGE</a></li>
+				<li><a href  = "file:///C:/Users/Yefri%20Paredes/Desktop/Andres%20Paredes/Centennial%20College/PROGRAM/1st%20Semester/WID/Individual%20Project/properties.html">AVAILABLE PROPERTIES</a></li>
+				<li><a href  = "file:///C:/Users/Yefri%20Paredes/Desktop/Andres%20Paredes/Centennial%20College/PROGRAM/1st%20Semester/WID/Individual%20Project/contactform.html">CONTACT FORM</a></li>
+				<li><a href  = "file:///C:/Users/Yefri%20Paredes/Desktop/Andres%20Paredes/Centennial%20College/PROGRAM/1st%20Semester/WID/Individual%20Project/creditpage.html">CREDITS PAGE</a></li>
+		</ul>
+	</div>
+	<h1> Contact Us </h1>
+	<fieldset class = "contactUs">
+	<h2>We want to hear from you</h2>
+	<p>If you have any preferences about your future home, please contact us to help you to find your dream home</p>
+	<form action="mailto:aparede5@my.centennialcollege.ca" method="post">
+		<fieldset class = "pInformation">
+		<legend><h3>Personal Information</h3></legend>
+		<p>
+			<label for="txtFirstName">First Name:</label>
+			<input id="txtFirstName" name="txtFirstName" size="25"  type="text" required="required">
+		</p>
+		<p>
+			<label for="txtLastName">Last Name:</label>
+			<input id="txtLastName" name="txtLastName" size="25"  type="text" required="required">
+		</p>
+		<p>
+		<label>Age: 
+				 <input type = "number" min = "20"  max = "100" step = "1" /></label> (Enter your age please)
+		</p>
+		<p>
+			<label for="txtEmail">Email:</label>
+			<input id="txtEmail" name="txtEmail" size="30" type="email" placeholder="forexample@gmail.com" required="required">
+		</p>
+		<p>
+			<label for="txtPhoneNumber">Phone Number:</label>
+			<input id="txtPhoneNumber" name="txtPhoneNumber" size="25"  type="text" required="required">
+		</p>
+	</fieldset>
+	<fieldset class = "bPreferences">
+		<legend><h3>Building Preferences</h3></legend>
+			<p>
+				<label for="optProperty">Property Type:</label> <br /> 
+				<input id="optDT" name="optProperty" type= "radio" value="Fa">Detached
+				<input id="optTH" name="optProperty" type= "radio" value="Fa">Townhouse
+				<input id="optCD" name="optProperty" type= "radio" value="Win">Condos
+				<input id="optBW" name="optProperty" type= "radio" value="Win">Bungalows
+			</p>
+			<p>
+				<label for="optDecoration">Decoration Style:</label> <br /> 
+				<input id="optMI" name="optDecoration" type= "radio" value="Fa">Minimalist
+				<input id="optCP" name="optDecoration" type= "radio" value="Fa">Contemporary
+				<input id="optTL" name="optDecoration" type= "radio" value="Win">Traditional
+				<input id="optRC" name="optDecoration" type= "radio" value="Win">Rustic
+				<input id="optSD" name="optDecoration" type= "radio" value="Win">Scandinavian
+				<input id="optUM" name="optDecoration" type= "radio" value="Win">Urban Modern
+				<input id="optIT" name="optDecoration" type= "radio" value="Win">Industrial
+				<input id="optOH" name="optDecoration" type= "radio" value="Win">Other
+			</p>
+			<p>
+				<label for="optkitchen">Kitchen Style:</label> <br /> 
+				<input id="optTN" name="optkitchen" type= "radio" value="Fa">Traditional
+				<input id="optAM" name="optkitchen" type= "radio" value="Fa">American
+				<input id="optIL" name="optkitchen" type= "radio" value="Win">Industrial
+				<input id="optBN" name="optkitchen" type= "radio" value="Win">Bohemian
+				<input id="optOT" name="optkitchen" type= "radio" value="Win">Other
+			</p>
+			<p>
+			<label>Bedrooms: 
+				 <input type = "number" min = "1"  max = "10" step = "1" /></label>(Enter # of bedrooms)
+			</p>
+			<p>
+			<label>Washrooms: 
+				 <input type = "number" min = "1"  max = "10" step = "1" /></label> (Enter # of Washrooms)
+			<p>
+				<label>Price Range:</label>
+				  $100,000<input type = "range"
+						min = "100,000"
+						max = "5,000,000"
+						value = "50,000" /> $5,000,000
+	 </p>
+	</fieldset>
+	<fieldset class = "comments">
+		<legend><h3>Any other commments</h3></legend>
+			<p>
+				<label for="txtOtherComms">Comments:</label> <br />
+				<textarea id="txtOtherComts" cols="40" name="txtOtherComts" placeholder= "If you have any additional comments write them in this box" rows="8"></textarea>
+			</p>
+	</fieldset>
+				<p>
+
+			<input name="btnSubmit" type="submit" value="Complete Registration">
+
+			<input name="btnReset" type="reset" value="Clear Form">
+			</p>
+
+
+</header>
+</div>
+</body>
+</html>
